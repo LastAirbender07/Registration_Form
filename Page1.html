@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> AMRITA | Registration Form </title>
+  <style type="text/css">
+	label{
+		width: 100px;
+		display:inline-table;
+	}
+	</style>
+</head>
+
+<body style="background: linear-gradient(135deg, #dd32ad, #16d8e6)">
+	<br>
+    <button><a href="https://www.google.com" style="text-decoration: none; font-size: 20px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Main Page</a></button>
+	<img src="pic1.jpg">
+  <h2 align="center">REGISTER NOW - CYBER NATION 2022</h2>
+  <p align="right">V.JAYARAJ<br>CH.EN.U4CYS21026</p>
+
+  <table  align="center" style="background:radial-gradient(rgb(255, 234, 0), rgb(248, 130, 20)); padding:25px; margin: auto;">
+  <form align="left" action = "login.php" method = "post">
+	<tr>
+	<td>
+	<label for = "name"> FULL NAME </label>
+	<input type = "text" name = "name" placeholder="Enter name" minlength = "5" id = "name" required />
+	<br><br>
+
+	<label for = "phone"> PHONE : </label>
+	<input type = "text"  name = "Phone" placeholder="Enter phone number" id = "phone" pattern = [0-9]{10} />
+	<br><br>
+
+	<label for = "E-Mail"> E-MAIL ID : </label>
+	<input type = "text" name = "E-Mail" placeholder="example@gmail.com" id = "E-Mail" />
+	<br><br>
+
+	<label for = "date"> DATE : </label>
+	<input type = "date" name = "date" id = "date" required />
+	<br><br>
+
+	<label for = "u_name"> USERNAME : </label>&nbsp;
+	<input type = "text" name = "name" placeholder="Enter username" minlength = "5" id = "u_name" required />
+	<br><br>
+
+	<label for = "password"> PASSWORD : </label>
+	<input type = "password" name = "Password" placeholder="Enter password" id = "password" required />
+	<br><br>
+
+	<label for = "c_password"> CONFIRM PASSWORD : </label>
+	<input type = "password" name = "Password" placeholder="Re-enter password " id = "c_password" required />
+	<br><br>
+
+	<label for = "upload"> UPLOAD DOCUMENTS </label>
+	<input type = "file" name = "file" id = "upload">
+	<br><br>
+
+	<label for = "country"> COUNTRY OF ORIGIN : </label>
+	<select name = "country" id = "country">
+	  <option value = "none" selected disabled hidden>Select a Country</option>
+	  <option value = "India">INDIA</option>
+	  <option value = "Pakistan">PAKISTAN</option>
+	  <option value = "Sri-lanka">SRI-LANKA</option>
+	  </select>
+	<br><br>
+
+	<label for = "comments"> COMMENTS </label>
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<textarea rows="5" cols = "25" name = "COMMENTS" placeholder="I feel lucky!"  id = "comments"></textarea>
+	<br><br>
+
+</td>
+
+<td  colrow="10">
+	SELECT DEPARTMENT :
+	<br><br>                     
+	<input type = "radio" name = "dept" id = "cse">
+	<label for = "cse"> CSE </label>
+	
+	<input type = "radio" name = "dept" id = "cys">
+	<label for = "cys"> CYS </label>
+	
+	<input type = "radio" name = "dept" id = "ai">
+	<label for = "ai"> AI</label>
+    <br>
+	<input type = "radio" name = "dept" id = "ece">
+	<label for = "ece"> ECE </label>
+	
+	<input type = "radio" name = "dept" id = "cce">
+	<label for = "cce"> CCE </label>	
+	
+	<input type = "radio" name = "dept" id = "mec">
+	<label for = "mec"> MECH </label>
+	
+
+	<br><br>
+
+	EVENTS : 
+	<br><br>
+	<input type = "checkbox" name = "course" id = "Conclave">
+	<label for = "Conclave"> INAUGURATION OF CYBER CONCLAVE</label>
+	
+	<input type = "checkbox" name = "course" id = "Meet">
+	<label for = "Meet">INDUSTRY MEET </label>
+	
+	<input type = "checkbox" name = "course" id = "fest">
+	<label for = "fest"> CYBER FEST'22 </label>
+	<br><br>
+
+	CYBER AWARENESS WORKSHOPS :  
+	<br><br>
+	<input type = "checkbox" name = "course" id = "cyber_threat">
+	<label for = "cyber_threat"> CYBER THREATS : Global Challenge</label>
+	
+	<input type = "checkbox" name = "course" id = "Cyber_Space">
+	<label for = "Cyber_Space">CYBER SPACE : Solutions and Directions </label>
+	
+	<input type = "checkbox" name = "course" id = "Cyber_Sec">
+	<label for = "Cyber_Sec"> CYBER SECURITY : Academia </label>
+	<br><br>
+</td>
+  </tr>
+	
+<tr>
+<td align = "center" colspan="2">
+	<input width="100%" type = "submit" value = "Submit" name = "submit">&nbsp;&nbsp;&nbsp;
+	<input type = "reset" value = "Reset" name = "reset">&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+  </form>
+  </table>
+</body>
+</html>
